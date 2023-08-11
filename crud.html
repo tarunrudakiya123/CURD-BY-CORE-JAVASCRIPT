@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(31, 73, 11);
+        }
+
+        table{
+            background: #e8e8d4;
+        }
+
+        tr{
+            border: 1px solid rgb(0, 0, 0);
+    
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-warning text-center">CRUD Operation by Core JavaScript</h1>
+        <form class="row form-label d-flex flex-wrap text-light align-items-center justify-content-center m-0 mt-5">
+            <h3>Register Your Detail</h3>
+
+
+            <div class="col-12 pt-2" id="firstName">
+                <input type="text" class="form-control w-50" placeholder="First name" >
+            </div>
+
+
+            <div class=" col-12 pt-2" id="lastName">
+                <input type="text" class="form-control w-50" placeholder="Last name" >
+            </div>
+
+
+            <div class=" col-12 pt-2 " id="phone">
+                <input type="phone" class="form-control w-50" placeholder="Phone">
+            </div>
+
+
+                <div class="mt-3 ">
+                    <button class="btn btn-success w-50 " type="button" id="btn">Submit</button>
+                </div>
+            
+        </form>
+
+
+        <hr class="text-white"/>
+
+
+        <div class="container m-0">
+
+            <table class=" table caption-top text-center border   "id="tbl">
+                <caption class="text-light">List of Students</caption>
+
+                <thead>
+                    <tr class="text-center ">
+                        <th scope="col">FirstName</th>
+                        <th scope="col">LastName</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                   
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
